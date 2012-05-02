@@ -1,1 +1,1 @@
-javascript:void((function(){var%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src',%20'http://krrb.com/assets/bmlet.js?t=G3zTKx6LiduSxf24KbkF');document.body.appendChild(e)})());
+javascript:void((function(){var%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src',%20'http://welcome.marketpublique.com/mp_bookmarklet/bookmarklet.js');document.body.appendChild(e)})());
