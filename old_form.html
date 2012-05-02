@@ -1,0 +1,696 @@
+<link rel="stylesheet" href="sell.css" type="text/css">
+<form id="form_sell" name="sell" action="sell.php" method="post" enctype="multipart/form-data">
+
+
+  <table class="sellSect" id="sellDesc">
+    <tbody><tr>
+        <td class="lfCol">
+          <h3 class="hed descHed">Item Description</h3>
+
+          <input type="hidden" name="page_action" value="first">
+
+          <label for="title">Headline</label>
+          <input type="text" class="title" id="title" name="title" maxlength="60" value="">
+
+          <label for="description">Description</label>
+          <input type="hidden" id="description" name="description" value="&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://welcome.marketpublique.com/fullservice_stores/mp/mptemplate.gif&quot; /&gt; &lt;img alt=&quot;&quot; src=&quot;http://welcome.marketpublique.com/fullservice_stores/mp/description.gif&quot; /&gt;  &amp;nbsp;&lt;/p&gt;
+          &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+          &lt;p&gt;&lt;br /&gt;
+          &lt;br /&gt;
+          &lt;img alt=&quot;&quot; src=&quot;http://welcome.marketpublique.com/fullservice_stores/mp/details.gif&quot; /&gt; &lt;br /&gt;
+          &lt;b&gt;Brand &lt;/b&gt;-&lt;/p&gt;
+          &lt;p&gt;&lt;b&gt;Market Size &lt;/b&gt;-&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;/p&gt;
+          &lt;p&gt;&lt;b&gt;Estimated Size &lt;/b&gt;-&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;/p&gt;
+          &lt;p&gt;&lt;b&gt;Material &lt;/b&gt;-&lt;/p&gt;
+          &lt;p&gt;&lt;b&gt;Condition &lt;/b&gt;-&amp;nbsp;&lt;/p&gt;
+          &lt;p&gt;&lt;b&gt;Estimated Size &lt;/b&gt;-&lt;b&gt;&amp;nbsp;&lt;br /&gt;
+          &lt;/b&gt; &lt;br /&gt;
+          &lt;img alt=&quot;&quot; src=&quot;http://welcome.marketpublique.com/fullservice_stores/mp/measurements.gif&quot; /&gt;&lt;/p&gt;
+          &lt;p&gt;All garments measured in inches, lying flat. Double measurements for bust, waist &amp;amp; hips. All measurements are approximate and within 1 inch. Please allow room for movement.&lt;/p&gt;
+          &lt;p&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;Shoulders&lt;/span&gt;&amp;nbsp;-&lt;/p&gt;
+          &lt;p&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;Bust&lt;/span&gt; -&lt;/p&gt;
+          &lt;p&gt;&lt;b&gt;Waist&lt;/b&gt;&amp;nbsp;-&lt;/p&gt;
+          &lt;p&gt;&lt;strong&gt;Hips&lt;/strong&gt;&amp;nbsp;-&amp;nbsp;&lt;/p&gt;
+          &lt;p&gt;&lt;strong&gt;Length&lt;/strong&gt;&amp;nbsp;-&amp;nbsp;&lt;/p&gt;
+          &lt;p&gt;&lt;br /&gt;
+          &lt;img alt=&quot;&quot; src=&quot;http://welcome.marketpublique.com/fullservice_stores/mp/policies.gif&quot; /&gt; &lt;br /&gt;
+          Due to the used nature of our items, do not take returns on items that do not fit. We will only accept returns if item is somehow misrepresented. Flaws, if any, will be listed in the description. Accessories not included, unless otherwise stated in the description.&lt;/p&gt;
+          &lt;p&gt;&amp;nbsp;&lt;/p&gt;" style="display:none"><input type="hidden" id="description___Config" value="" style="display:none"><iframe id="description___Frame" src="fck/editor/fckeditor.html?InstanceName=description&amp;Toolbar=Basic" width="600" height="300" frameborder="0" scrolling="no" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; background-color: transparent; background-image: none; width: 600px; height: 300px; "></iframe>                        	<!--<textarea class="desc" id="description" name="description" wrap="virtual"></textarea> -->
+
+        </td>
+        <td class="rtCol">
+          <h4 class="hed">Write a Good Headline.</h4>
+          <h5 class="title"><span style="text-transform: none; color: #ccc;">Sample:</span> 60s Long BOHO Prairie Pleated RUFFLE Maxi DRESS S</h5>
+
+          <div class="infoSect">
+            <p>No need to write in "vintage" or "vtg" in your headline, because everything is vintage! Use keywords to describe your item. For example...</p>
+            <p><strong>Era</strong>: 20s, 30s, 40s, 50s, 60s, 70s, 80s, 90s.</p>
+            <p><strong>Style</strong>: boho, chic, denim, disco, military, ethnic, avant garde, glam, grunge, gypsy, hippie, mod, punk, rockabilly, pinup, hawaiian, art nouveau, abstract, nautical, etc.</p>
+            <p><strong>Item Type:</strong> dress, coat, heels, handbag,etc.</p>
+            <p><strong>Brands</strong>: List it if it's a designer piece or by a recognized manufacturer.</p>
+            <p><strong>Features</strong>: Include color, material or  any specific details that make your item unique: long, pleated, ruffled, bows, big buttons, drop waist, poet sleeves, mini-dress etc.</p>
+          </div>
+
+
+          <script type="text/javascript">
+            function expandSellInfo () {
+              $("#infoDescCheck").slideDown("slow");
+              $("#expandlink").hide();
+              $("#hidelink").show();
+            }
+function contractSellInfo () {
+  $("#infoDescCheck").slideUp("slow");
+  $("#expandlink").show();
+  $("#hidelink").hide();
+}
+</script>
+
+<h4 class="hed">Description Checklist</h4>
+<div class="infoSect">
+
+
+  <div id="infoDescCheck" style="display: none;">
+
+    <p><strong>General Description:</strong> Everything and anything helps! Highlighting color, material, brand, and any features that make your item unique or special. Is it lined? Are the buttons special? Does it have a zipper or elastic waist? Does it come a with matching belt? </p>
+    <p><strong>Measurements:</strong> For best results, include as many measurements as you can.</p>
+    <p>For clothing, we recommend shoulders, bust, waist, hips, length and sleeve length.</p>
+    <p>For shoes, list size marked, width marked, insole length, insole width, heel height, boot shaft height and boot shaft opening circumference.</p>
+    <p><strong>Condition:</strong> List any flaws your item may have: holes, stains, rips, fading, smells, etc. You must disclose all flaws to the buyer in the description, even if you don't have a photo of the flaw.</p>
+
+  </div>
+
+
+  <p id="expandlink"><a href="#" onclick="expandSellInfo(); return false;">+ Expand</a></p>
+  <p id="hidelink" style="display: none;"><a href="#" onclick="contractSellInfo(); return false;">- Hide</a></p>
+
+
+</div>
+              </td>
+            </tr>
+        </tbody></table>
+
+
+        <a name="photos"></a>
+        <table class="sellSect" id="sellPhotos">
+          <tbody><tr>
+              <td class="lfCol">
+                <h3 class="hed photosHed">Upload Your Photos</h3>
+
+                <ul class="uploaderMethodMenu">
+                  <li><a href="" class="basicUploadMethod selected">Use Basic Uploader</a></li>
+                  <li><a href="" class="advancedUploadMethod ">Use Advanced Uploader<span class="caption">BETA</span></a></li>
+                </ul>
+                <div class="border-set"></div>
+                <!-- begin upload photo code  -->
+                <div class="uploadifyContainer ">
+                  <div class="photoUpload fileMenu hide">
+                    <div class="photoUpload fileMenu header">
+                      <p style="cursor:all-scroll;">FILE NAME</p>
+                    </div>
+                    <div class="photoUpload fileMenu fileManagement noscrollbar">
+                      <ul id="photoUploadFileSelect">
+                        <!--
+                        -701 is start
+                        -115 is max bg with scroll bar
+
+                        -->
+
+                      </ul>
+                    </div>
+                    <div class="photoUpload fileMenu footer">
+                      <ul>
+                        <!--
+                        <li class="btnAddMore"></li>
+                        -->
+                        <!-- make first child class to add margin-push for no add btn -->
+                        <li class="sizeTotal">Total: 0KB</li>
+                        <li class="numberOfTotalFiles"><span>0</span> Files</li>
+                      </ul>
+                      <div style="clear:both;"></div>
+                    </div>
+
+                    <div class="photoUpload fileMenu totalUploadProgress"><p>Total: <span class="uploadifyTotalUploadPercent">0</span>%</p></div>
+
+                    <!--  OLD UPLOAD BUTTON
+                    <p id="uploadifyContainerBtnUploadPhoto"><img src="themes/default/butPhotoUploadAction.jpg" class="btnUploadPhotos" alt="upload photos" /></p>
+                    -->
+
+                  </div>  <!-- end of #filemenu photo-ajax upload box -->
+
+                  <div class="coverUploadButtons"></div>
+
+                  <div class="selectToUploadPhotos">
+                    <div class="dialogBox">
+                      <p class="photoCountMessage"><strong>You can add <span class="selectPhotoCount">15</span> photos to your listing.</strong></p>
+                      <p class="instructions">You can select multiple photos by clicking on the first one, holding down the SHIFT key, and clicking on the last photo you want to upload. Also, use COMMAND-click (Mac) or CONTROL-click (PC) to select or de-select individual photos within your selection. Finally, click Upload Photos to begin the upload.</p>
+                    </div>
+                    <div style="float:left;">
+                      <!--
+                      <img src="themes/default/butPhotoUploadSelect.jpg" class="btnSelectToUploadPhotos" alt="select photos" /></p>
+
+                      <img src="themes/default/butPhotoUploadActionDisabled.jpg" class="btnAUploadPhotos" alt="Upload photos" /></p>
+                      -->
+                      <div class="btnSelectToUploadPhotos"><div id="loadifyFileUpload" style="display: none; ">You have a problem with your javascript</div><embed src="/uploadify/uploader.swf?fileUploadID=loadifyFileUpload&amp;pagepath=/&amp;buttonImg=themes/default/butPhotoUploadSelect.jpg&amp;script=/uploadify/upload.php&amp;folder=/uploaded/tmp/d57fbb02014527180d66d18c4c74c2e1&amp;scriptData=%26phpsessid%3Dp36610g7mdlpaqurnp3kelljb7%26auctionID%3Dd57fbb02014527180d66d18c4c74c2e1&amp;btnWidth=139&amp;btnHeight=35&amp;wmode=transparent&amp;fileDesc=Image Files&amp;fileExt=*.jpg;*.jpeg;*.gif;*.png&amp;multi=true&amp;simUploadLimit=2&amp;checkScript=/uploadify/check.php&amp;fileDataName=Filedata" quality="high" width="139" height="35" id="loadifyFileUploadUploader" class="fileUploaderBtn" name="loadifyFileUploadUploader" allowscriptaccess="sameDomain" wmode="transparent" type="application/x-shockwave-flash"><div id="loadifyFileUploadQueue" class="fileUploadQueue"></div></div>
+                      <div class="btnUploadSprite disabled"></div>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+
+
+
+
+                  <!-- photoSet display / preview for drag-n-drop reorder -->
+                  <ul id="photoSetPreview" class="ui-sortable" style="" unselectable="on">
+                  </ul>
+                  <div id="currently_editing">
+                  </div>
+
+                  <!-- END photoSet display / preview for drag-n-drop reorder -->
+
+                </div> <!-- closes the large container -->
+                <!-- end ajax uploadify -->
+
+
+
+                <!-- original uploadControl -->
+                <div class="uploadWrap show" style="border-bottom:none; padding-bottom:0px;">
+                  <label for="userfile" style="font-weight: normal;"><strong>First:</strong> Select the listing's main photo:</label>
+
+                  <input type="hidden" name="upd_pict_url" value="">
+                  <input type="hidden" name="imgtype" value="1">
+
+                  <input type="hidden" name="MAX_FILE_SIZE" value="15097152">
+
+                  <!--
+                  <input type="hidden" name="MAX_FILE_SIZE" value="5242880" />
+                  -->
+                  <input type="file" class="userfile" id="userfile" name="userfile">
+                  <input type="submit" class="photoUpload" name="photoUpload" value="Upload" id="photoUpload">
+                  <!-- sorry nessig, had to move those spans up so I could hot-swap the boxes easily -->
+                  <div class="clear" style="border-bottom:1px solid #62b3ca; padding-top:24px;"></div>
+
+                  <p style="padding-top:14px;"><span style="color: #000; font-size: 15px; line-height: 1.3em; font-weight: bold;">Next:</span> <a class="galleryUploadLink" href="javascript:window_open('upldgallery.php','gallery',703,708,20,20)">Upload additional photos (up to 15).</a> &nbsp;&nbsp;<a class="galleryUploadIcon" href="javascript:window_open('upldgallery.php','gallery',703,708,20,20)"><img class="iconPopup" src="images/iconNewWin.gif"></a></p>
+
+                </div>
+
+
+
+
+                <!-- END original uploadControl -->
+
+              </td>
+              <td class="rtCol"><h4 class="hed">Photo Uploading Guidelines</h4>
+                <div class="infoSect">
+                  <img class="samplePhoto" src="themes/default/sell_item_sample_photo.jpg">
+                  <p>Consider doing a split pane, square photo. Show a full image of your model, as well as a close-up. We recommend your main image be 490 pixels square.
+                  </p>
+                </div>
+              </td>
+            </tr>
+        </tbody></table>
+
+
+        <table class="sellSect" id="sellDetails">
+          <tbody><tr>
+              <td class="lfCol">
+                <h3 class="hed detailsHed">Auction Details</h3>
+
+                <div class="formCol1">
+
+                  <div class="formItem">
+                    <label>Auction's type</label>
+                    <ul id="aType">
+                      <li class="radItem"><label><input type="radio" name="atype" id="atypeStandard" value="1"> Standard Auction</label></li>
+                      <li class="radItem"><label><input type="radio" name="atype" id="atypeFixed" value="3" checked="checked"> Fixed Price</label></li>
+                    </ul>
+                  </div>
+
+                  <input type="hidden" id="iquantity" name="iquantity" value="1">
+
+                  <div class="formItem">
+                    <label for="minimum_bid" id="minBidLabel">Price</label>
+                    <input type="text" id="minimum_bid" name="minimum_bid" value="16.00"> USD
+                  </div>
+
+                  <input type="hidden" id="with_reserve" name="with_reserve" value="no">
+                  <input type="hidden" id="reserve_price" name="reserve_price" value="">
+
+                  <div class="formItem" id="formsectBuynow" style="display: none; ">
+                    <label>Offer "Buy Now" Price?</label>
+                    <ul id="buyNowList">
+                      <li class="radItem"><label><input type="radio" id="buy_now_yes" name="buy_now" value="yes"> Yes</label></li>
+                      <li class="radItem"><label><input type="radio" id="buy_now_no" name="buy_now" value="no" checked=""> No</label></li>
+                      <li>
+                      <label><input type="text" disabled="disabled" class="priceDisabled" id="buy_now_price" name="buy_now_price" value=""> USD</label>
+
+
+                      </li>
+                    </ul>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <input type="hidden" id="increments" name="increments" value="1">
+                  <input type="hidden" id="customincrement" name="customincrement" value="">
+
+                  <div class="formItem">
+                    <label for="pubdate_input">Starting date</label>
+                    <input type="text" name="a_starts" id="pubdate_input" maxlength="19" value="2012-05-02 16:34:43" class="startDate ">
+
+                    <a href="javascript:pubdate_cal.popup()"><img src="includes/img/calendar.gif" alt="Click Here to Set Start Date"></a>
+                    <script language="JavaScript">
+                      var pubdate_cal = new xar_base_calendar(document.getElementById("pubdate_input"), "."); pubdate_cal.year_scroll = true; pubdate_cal.time_comp = true;
+                    </script>
+                  </div>
+                  <div class="formItem">
+                    <label for="duration">Duration</label>
+                    <select class="duration" id="duration" name="duration">
+                      <option value="3">3 Days</option>  <option value="5">5 Days</option>  <option value="7">7 Days</option>  <option value="10">10 Days</option>  <option value="30" selected="">30 Days (Fixed Price Only)</option></select>
+
+                  </div>
+                  <!--<input type="hidden" id="relist" name="relist" value="0" />-->
+                </div><!-- end div.formCol1 -->
+
+
+
+
+                <div class="formCol2">
+                  <div class="formItem">
+                    <label for="relist">Auction relisting</label>
+                    <div id="relistBox">
+                      You can choose to automatically relist your auction, if no bids have been posted.<br>
+                      <br>
+                      Enter the number of times you want your auction to be relisted (enter zero or leave blank if you don't want the automatic relisting to be applied to this auction).<br>
+                      <br>
+                      Maximum numer of allowed relistings: 5<br>
+                      <br>
+                      <input type="text" id="relist" name="relist" class="relist" value="0" maxlength="1">
+                    </div>
+                  </div>
+                  <!--<div class="formItem">
+                    <label for="country">Country</label>
+                    <SELECT class="country" id="country" NAME="country">
+                      <OPTION VALUE='' ></OPTION>
+                      <OPTION VALUE='Afghanistan' >Afghanistan</OPTION>
+                      <OPTION VALUE='Albania' >Albania</OPTION>
+                      <OPTION VALUE='Algeria' >Algeria</OPTION>
+                      <OPTION VALUE='American Samoa' >American Samoa</OPTION>
+                      <OPTION VALUE='Andorra' >Andorra</OPTION>
+                      <OPTION VALUE='Angola' >Angola</OPTION>
+                      <OPTION VALUE='Anguilla' >Anguilla</OPTION>
+                      <OPTION VALUE='Antarctica' >Antarctica</OPTION>
+                      <OPTION VALUE='Antigua And Barbuda' >Antigua And Barbuda</OPTION>
+                      <OPTION VALUE='Argentina' >Argentina</OPTION>
+                      <OPTION VALUE='Armenia' >Armenia</OPTION>
+                      <OPTION VALUE='Aruba' >Aruba</OPTION>
+                      <OPTION VALUE='Australia' >Australia</OPTION>
+                      <OPTION VALUE='Austria' >Austria</OPTION>
+                      <OPTION VALUE='Azerbaijan' >Azerbaijan</OPTION>
+                      <OPTION VALUE='Bahamas' >Bahamas</OPTION>
+                      <OPTION VALUE='Bahrain' >Bahrain</OPTION>
+                      <OPTION VALUE='Bangladesh' >Bangladesh</OPTION>
+                      <OPTION VALUE='Barbados' >Barbados</OPTION>
+                      <OPTION VALUE='Belarus' >Belarus</OPTION>
+                      <OPTION VALUE='Belgium' >Belgium</OPTION>
+                      <OPTION VALUE='Belize' >Belize</OPTION>
+                      <OPTION VALUE='Benin' >Benin</OPTION>
+                      <OPTION VALUE='Bermuda' >Bermuda</OPTION>
+                      <OPTION VALUE='Bhutan' >Bhutan</OPTION>
+                      <OPTION VALUE='Bolivia' >Bolivia</OPTION>
+                      <OPTION VALUE='Bosnia and Herzegowina' >Bosnia and Herzegowina</OPTION>
+                      <OPTION VALUE='Botswana' >Botswana</OPTION>
+                      <OPTION VALUE='Bouvet Island' >Bouvet Island</OPTION>
+                      <OPTION VALUE='Brazil' >Brazil</OPTION>
+                      <OPTION VALUE='British Indian Ocean Territory' >British Indian Ocean Territory</OPTION>
+                      <OPTION VALUE='Brunei Darussalam' >Brunei Darussalam</OPTION>
+                      <OPTION VALUE='Bulgaria' >Bulgaria</OPTION>
+                      <OPTION VALUE='Burkina Faso' >Burkina Faso</OPTION>
+                      <OPTION VALUE='Burma' >Burma</OPTION>
+                      <OPTION VALUE='Burundi' >Burundi</OPTION>
+                      <OPTION VALUE='Cambodia' >Cambodia</OPTION>
+                      <OPTION VALUE='Cameroon' >Cameroon</OPTION>
+                      <OPTION VALUE='Canada' >Canada</OPTION>
+                      <OPTION VALUE='Cape Verde' >Cape Verde</OPTION>
+                      <OPTION VALUE='Cayman Islands' >Cayman Islands</OPTION>
+                      <OPTION VALUE='Central African Republic' >Central African Republic</OPTION>
+                      <OPTION VALUE='Chad' >Chad</OPTION>
+                      <OPTION VALUE='Chile' >Chile</OPTION>
+                      <OPTION VALUE='China' >China</OPTION>
+                      <OPTION VALUE='Christmas Island' >Christmas Island</OPTION>
+                      <OPTION VALUE='Cocos (Keeling) Islands' >Cocos (Keeling) Islands</OPTION>
+                      <OPTION VALUE='Colombia' >Colombia</OPTION>
+                      <OPTION VALUE='Comoros' >Comoros</OPTION>
+                      <OPTION VALUE='Congo' >Congo</OPTION>
+                      <OPTION VALUE='Congo, the Democratic Republic' >Congo, the Democratic Republic</OPTION>
+                      <OPTION VALUE='Cook Islands' >Cook Islands</OPTION>
+                      <OPTION VALUE='Costa Rica' >Costa Rica</OPTION>
+                      <OPTION VALUE='Cote d'Ivoire' >Cote d'Ivoire</OPTION>
+                      <OPTION VALUE='Croatia' >Croatia</OPTION>
+                      <OPTION VALUE='Cyprus' >Cyprus</OPTION>
+                      <OPTION VALUE='Czech Republic' >Czech Republic</OPTION>
+                      <OPTION VALUE='Denmark' >Denmark</OPTION>
+                      <OPTION VALUE='Djibouti' >Djibouti</OPTION>
+                      <OPTION VALUE='Dominica' >Dominica</OPTION>
+                      <OPTION VALUE='Dominican Republic' >Dominican Republic</OPTION>
+                      <OPTION VALUE='East Timor' >East Timor</OPTION>
+                      <OPTION VALUE='Ecuador' >Ecuador</OPTION>
+                      <OPTION VALUE='Egypt' >Egypt</OPTION>
+                      <OPTION VALUE='El Salvador' >El Salvador</OPTION>
+                      <OPTION VALUE='England' >England</OPTION>
+                      <OPTION VALUE='Equatorial Guinea' >Equatorial Guinea</OPTION>
+                      <OPTION VALUE='Eritrea' >Eritrea</OPTION>
+                      <OPTION VALUE='Estonia' >Estonia</OPTION>
+                      <OPTION VALUE='Ethiopia' >Ethiopia</OPTION>
+                      <OPTION VALUE='Falkland Islands' >Falkland Islands</OPTION>
+                      <OPTION VALUE='Faroe Islands' >Faroe Islands</OPTION>
+                      <OPTION VALUE='Fiji' >Fiji</OPTION>
+                      <OPTION VALUE='Finland' >Finland</OPTION>
+                      <OPTION VALUE='France' >France</OPTION>
+                      <OPTION VALUE='French Guiana' >French Guiana</OPTION>
+                      <OPTION VALUE='French Polynesia' >French Polynesia</OPTION>
+                      <OPTION VALUE='French Southern Territories' >French Southern Territories</OPTION>
+                      <OPTION VALUE='Gabon' >Gabon</OPTION>
+                      <OPTION VALUE='Gambia' >Gambia</OPTION>
+                      <OPTION VALUE='Georgia' >Georgia</OPTION>
+                      <OPTION VALUE='Germany' >Germany</OPTION>
+                      <OPTION VALUE='Ghana' >Ghana</OPTION>
+                      <OPTION VALUE='Gibraltar' >Gibraltar</OPTION>
+                      <OPTION VALUE='Great Britain' >Great Britain</OPTION>
+                      <OPTION VALUE='Greece' >Greece</OPTION>
+                      <OPTION VALUE='Greenland' >Greenland</OPTION>
+                      <OPTION VALUE='Grenada' >Grenada</OPTION>
+                      <OPTION VALUE='Guadeloupe' >Guadeloupe</OPTION>
+                      <OPTION VALUE='Guam' >Guam</OPTION>
+                      <OPTION VALUE='Guatemala' >Guatemala</OPTION>
+                      <OPTION VALUE='Guinea' >Guinea</OPTION>
+                      <OPTION VALUE='Guinea-Bissau' >Guinea-Bissau</OPTION>
+                      <OPTION VALUE='Guyana' >Guyana</OPTION>
+                      <OPTION VALUE='Haiti' >Haiti</OPTION>
+                      <OPTION VALUE='Heard and Mc Donald Islands' >Heard and Mc Donald Islands</OPTION>
+                      <OPTION VALUE='Holy See (Vatican City State)' >Holy See (Vatican City State)</OPTION>
+                      <OPTION VALUE='Honduras' >Honduras</OPTION>
+                      <OPTION VALUE='Hong Kong' >Hong Kong</OPTION>
+                      <OPTION VALUE='Hungary' >Hungary</OPTION>
+                      <OPTION VALUE='Iceland' >Iceland</OPTION>
+                      <OPTION VALUE='India' >India</OPTION>
+                      <OPTION VALUE='Indonesia' >Indonesia</OPTION>
+                      <OPTION VALUE='Ireland' >Ireland</OPTION>
+                      <OPTION VALUE='Israel' >Israel</OPTION>
+                      <OPTION VALUE='Italy' >Italy</OPTION>
+                      <OPTION VALUE='Jamaica' >Jamaica</OPTION>
+                      <OPTION VALUE='Japan' >Japan</OPTION>
+                      <OPTION VALUE='Jordan' >Jordan</OPTION>
+                      <OPTION VALUE='Kazakhstan' >Kazakhstan</OPTION>
+                      <OPTION VALUE='Kenya' >Kenya</OPTION>
+                      <OPTION VALUE='Kiribati' >Kiribati</OPTION>
+                      <OPTION VALUE='Korea (South)' >Korea (South)</OPTION>
+                      <OPTION VALUE='Kuwait' >Kuwait</OPTION>
+                      <OPTION VALUE='Kyrgyzstan' >Kyrgyzstan</OPTION>
+                      <OPTION VALUE='Lao People's Democratic Republ' >Lao People's Democratic Republ</OPTION>
+                      <OPTION VALUE='Latvia' >Latvia</OPTION>
+                      <OPTION VALUE='Lebanon' >Lebanon</OPTION>
+                      <OPTION VALUE='Lesotho' >Lesotho</OPTION>
+                      <OPTION VALUE='Liberia' >Liberia</OPTION>
+                      <OPTION VALUE='Liechtenstein' >Liechtenstein</OPTION>
+                      <OPTION VALUE='Lithuania' >Lithuania</OPTION>
+                      <OPTION VALUE='Luxembourg' >Luxembourg</OPTION>
+                      <OPTION VALUE='Macau' >Macau</OPTION>
+                      <OPTION VALUE='Macedonia' >Macedonia</OPTION>
+                      <OPTION VALUE='Madagascar' >Madagascar</OPTION>
+                      <OPTION VALUE='Malawi' >Malawi</OPTION>
+                      <OPTION VALUE='Malaysia' >Malaysia</OPTION>
+                      <OPTION VALUE='Maldives' >Maldives</OPTION>
+                      <OPTION VALUE='Mali' >Mali</OPTION>
+                      <OPTION VALUE='Malta' >Malta</OPTION>
+                      <OPTION VALUE='Marshall Islands' >Marshall Islands</OPTION>
+                      <OPTION VALUE='Martinique' >Martinique</OPTION>
+                      <OPTION VALUE='Mauritania' >Mauritania</OPTION>
+                      <OPTION VALUE='Mauritius' >Mauritius</OPTION>
+                      <OPTION VALUE='Mayotte' >Mayotte</OPTION>
+                      <OPTION VALUE='Mexico' >Mexico</OPTION>
+                      <OPTION VALUE='Micronesia, Federated States o' >Micronesia, Federated States o</OPTION>
+                      <OPTION VALUE='Moldova, Republic of' >Moldova, Republic of</OPTION>
+                      <OPTION VALUE='Monaco' >Monaco</OPTION>
+                      <OPTION VALUE='Mongolia' >Mongolia</OPTION>
+                      <OPTION VALUE='Montserrat' >Montserrat</OPTION>
+                      <OPTION VALUE='Morocco' >Morocco</OPTION>
+                      <OPTION VALUE='Mozambique' >Mozambique</OPTION>
+                      <OPTION VALUE='Namibia' >Namibia</OPTION>
+                      <OPTION VALUE='Nauru' >Nauru</OPTION>
+                      <OPTION VALUE='Nepal' >Nepal</OPTION>
+                      <OPTION VALUE='Netherlands' >Netherlands</OPTION>
+                      <OPTION VALUE='Netherlands Antilles' >Netherlands Antilles</OPTION>
+                      <OPTION VALUE='New Caledonia' >New Caledonia</OPTION>
+                      <OPTION VALUE='New Zealand' >New Zealand</OPTION>
+                      <OPTION VALUE='Nicaragua' >Nicaragua</OPTION>
+                      <OPTION VALUE='Niger' >Niger</OPTION>
+                      <OPTION VALUE='Nigeria' >Nigeria</OPTION>
+                      <OPTION VALUE='Niuev' >Niuev</OPTION>
+                      <OPTION VALUE='Norfolk Island' >Norfolk Island</OPTION>
+                      <OPTION VALUE='Northern Ireland' >Northern Ireland</OPTION>
+                      <OPTION VALUE='Northern Mariana Islands' >Northern Mariana Islands</OPTION>
+                      <OPTION VALUE='Norway' >Norway</OPTION>
+                      <OPTION VALUE='Oman' >Oman</OPTION>
+                      <OPTION VALUE='Pakistan' >Pakistan</OPTION>
+                      <OPTION VALUE='Palau' >Palau</OPTION>
+                      <OPTION VALUE='Panama' >Panama</OPTION>
+                      <OPTION VALUE='Papua New Guinea' >Papua New Guinea</OPTION>
+                      <OPTION VALUE='Paraguay' >Paraguay</OPTION>
+                      <OPTION VALUE='Peru' >Peru</OPTION>
+                      <OPTION VALUE='Philippines' >Philippines</OPTION>
+                      <OPTION VALUE='Pitcairn' >Pitcairn</OPTION>
+                      <OPTION VALUE='Poland' >Poland</OPTION>
+                      <OPTION VALUE='Portugal' >Portugal</OPTION>
+                      <OPTION VALUE='Puerto Rico' >Puerto Rico</OPTION>
+                      <OPTION VALUE='Qatar' >Qatar</OPTION>
+                      <OPTION VALUE='Reunion' >Reunion</OPTION>
+                      <OPTION VALUE='Romania' >Romania</OPTION>
+                      <OPTION VALUE='Russian Federation' >Russian Federation</OPTION>
+                      <OPTION VALUE='Rwanda' >Rwanda</OPTION>
+                      <OPTION VALUE='Saint Kitts and Nevis' >Saint Kitts and Nevis</OPTION>
+                      <OPTION VALUE='Saint Lucia' >Saint Lucia</OPTION>
+                      <OPTION VALUE='Saint Vincent and the Grenadin' >Saint Vincent and the Grenadin</OPTION>
+                      <OPTION VALUE='Samoa (Independent)' >Samoa (Independent)</OPTION>
+                      <OPTION VALUE='San Marino' >San Marino</OPTION>
+                      <OPTION VALUE='Sao Tome and Principe' >Sao Tome and Principe</OPTION>
+                      <OPTION VALUE='Saudi Arabia' >Saudi Arabia</OPTION>
+                      <OPTION VALUE='Scotland' >Scotland</OPTION>
+                      <OPTION VALUE='Senegal' >Senegal</OPTION>
+                      <OPTION VALUE='Seychelles' >Seychelles</OPTION>
+                      <OPTION VALUE='Sierra Leone' >Sierra Leone</OPTION>
+                      <OPTION VALUE='Singapore' >Singapore</OPTION>
+                      <OPTION VALUE='Slovakia' >Slovakia</OPTION>
+                      <OPTION VALUE='Slovenia' >Slovenia</OPTION>
+                      <OPTION VALUE='Solomon Islands' >Solomon Islands</OPTION>
+                      <OPTION VALUE='Somalia' >Somalia</OPTION>
+                      <OPTION VALUE='South Africa' >South Africa</OPTION>
+                      <OPTION VALUE='South Georgia and the South Sa' >South Georgia and the South Sa</OPTION>
+                      <OPTION VALUE='Spain' >Spain</OPTION>
+                      <OPTION VALUE='Sri Lanka' >Sri Lanka</OPTION>
+                      <OPTION VALUE='St. Helena' >St. Helena</OPTION>
+                      <OPTION VALUE='St. Pierre and Miquelon' >St. Pierre and Miquelon</OPTION>
+                      <OPTION VALUE='Suriname' >Suriname</OPTION>
+                      <OPTION VALUE='Svalbard and Jan Mayen Islands' >Svalbard and Jan Mayen Islands</OPTION>
+                      <OPTION VALUE='Swaziland' >Swaziland</OPTION>
+                      <OPTION VALUE='Sweden' >Sweden</OPTION>
+                      <OPTION VALUE='Switzerland' >Switzerland</OPTION>
+                      <OPTION VALUE='Taiwan' >Taiwan</OPTION>
+                      <OPTION VALUE='Tajikistan' >Tajikistan</OPTION>
+                      <OPTION VALUE='Tanzania' >Tanzania</OPTION>
+                      <OPTION VALUE='Thailand' >Thailand</OPTION>
+                      <OPTION VALUE='Togo' >Togo</OPTION>
+                      <OPTION VALUE='Tokelau' >Tokelau</OPTION>
+                      <OPTION VALUE='Tonga' >Tonga</OPTION>
+                      <OPTION VALUE='Trinidad and Tobago' >Trinidad and Tobago</OPTION>
+                      <OPTION VALUE='Tunisia' >Tunisia</OPTION>
+                      <OPTION VALUE='Turkey' >Turkey</OPTION>
+                      <OPTION VALUE='Turkmenistan' >Turkmenistan</OPTION>
+                      <OPTION VALUE='Turks and Caicos Islands' >Turks and Caicos Islands</OPTION>
+                      <OPTION VALUE='Tuvalu' >Tuvalu</OPTION>
+                      <OPTION VALUE='Uganda' >Uganda</OPTION>
+                      <OPTION VALUE='Ukraine' >Ukraine</OPTION>
+                      <OPTION VALUE='United Arab Emiratesv' >United Arab Emiratesv</OPTION>
+                      <OPTION VALUE='United States' SELECTED='true' >United States</OPTION>
+                      <OPTION VALUE='Uruguay' >Uruguay</OPTION>
+                      <OPTION VALUE='Uzbekistan' >Uzbekistan</OPTION>
+                      <OPTION VALUE='Vanuatu' >Vanuatu</OPTION>
+                      <OPTION VALUE='Venezuela' >Venezuela</OPTION>
+                      <OPTION VALUE='Viet Nam' >Viet Nam</OPTION>
+                      <OPTION VALUE='Virgin Islands (British)' >Virgin Islands (British)</OPTION>
+                      <OPTION VALUE='Virgin Islands (U.S.)' >Virgin Islands (U.S.)</OPTION>
+                      <OPTION VALUE='Wales' >Wales</OPTION>
+                      <OPTION VALUE='Wallis and Futuna Islands' >Wallis and Futuna Islands</OPTION>
+                      <OPTION VALUE='Western Sahara' >Western Sahara</OPTION>
+                      <OPTION VALUE='Yemen' >Yemen</OPTION>
+                      <OPTION VALUE='Zambia' >Zambia</OPTION>
+                      <OPTION VALUE='Zimbabwe' >Zimbabwe</OPTION>
+                    </SELECT>
+                  </div>
+                  <div class="formItem">
+                    <label for="location_zip">ZIP/Post Code</label>
+                    <input type="text" class="location_zip" id="location_zip" name="location_zip" value="11211" maxlength="10" />
+                  </div>-->
+
+
+
+                </div><!-- end div.formCol2 -->
+
+              </td>
+              <td class="rtCol"><h4 class="hed">Auction Q+A</h4>
+                <div class="infoSect">
+                  <p><strong>How do I set a reserve price?</strong><br>
+                  You do not set a 'reserve' price. You can start your auction at any price you'd like, so set it at the minimum your willing to sell that item for.</p>
+
+                  <p><strong>What if I have multiple items?</strong><br>
+                  If you have multiple items, you must list each item individually. Each listing is for one item only, or items sold as a set or lot.</p>
+
+                  <p><strong>What time zone is the starting date in?</strong><br>
+                  Market Publique is on New York city time, the Eastern Time Zone (GMT -5)</p>
+
+
+                </div>
+              </td>
+            </tr>
+        </tbody></table>
+
+        <table class="sellSect" id="sellPayShip">
+          <tbody><tr>
+              <td class="lfCol">
+                <h3 class="hed payShipHed">Buy it, Pack it, Ship it</h3>
+
+                <div class="formCol1">
+                  <div class="formItem">
+                    <label>Payment Methods</label>
+                    <ul id="paymentList">
+
+                      <li class="checkItem"><label><input type="CHECKBOX" name="payment[]" value="Paypal" checked=""> Paypal</label></li><li class="checkItem"><label><input type="CHECKBOX" name="payment[]" value="Money Order"> Money Order</label></li>                                <!--<li class="checkItem"><label><input type="checkbox" name="payment[]" value="Paypal" /> Paypal</label></li>
+                      <li class="checkItem"><label><input type="checkbox" name="payment[]" value="Wire Transfer" /> Wire Transfer</label></li> -->
+                    </ul>
+
+                  </div>
+
+                  <input type="hidden" id="shipping" name="shipping" value="1">
+
+                  <div class="formItem">
+                    <label for="shipment_fee">Domestic Shipping Cost</label>
+                    <input type="text" id="shipment_fee" name="shipment_fee" class="shipment_fee" value="6.00"><br>
+                  </div>
+
+                  <div class="formItem">
+                    <label>International Shipping</label>
+                    <ul id="internationalList">
+                      <li class="radItem">
+                      <label><input id="international_shipping_yes" type="radio" value="1" name="international" checked="checked"> Yes</label>
+                      </li>
+                      <li class="radItem">
+                      <label><input id="international_shipping_no" type="radio" value="0" name="international"> No</label>
+                      </li>
+                      <li>
+                      <label><input type="text" id="international_shipment_fee" name="international_shipment_fee" class="shipment_fee" value="13.00"> USD</label>
+                      </li>
+                    </ul>
+
+                  </div>
+
+
+
+
+
+                  <div class="formItem">
+                    <label>Ship From</label>
+                    <p id="shipFrom">
+                    United States (11211)
+                    </p>
+                    <input type="hidden" name="country" value="United States">
+                    <input type="hidden" name="location_zip" value="11211">
+                  </div>
+
+                  <style>
+                    table#sellPayShip p#shipFrom {padding: 10px; background-color: #afd8e5; font-size: 12px; line-height: 1.3em;}
+                    table#sellPayShip textarea#shipping_terms {height: 230px;}
+                  </style>
+
+                </div><!-- end div.formCol1 -->
+
+
+                <div class="formCol2">
+                  <div class="formItem">
+                    <label for="shipping_terms">Shipping Terms</label>
+                    <textarea id="shipping_terms" name="shipping_terms">WE COMBINE SHIPPING! Contact us for a quote.
+
+                      FREE DOMESTIC SHIPPING ON SCARVES! Scarves will be shipped via First Class Mail.
+
+                      We are not responsible for items lost or damaged in the mail. If you would like to purchase insurance, please contact us prior to bidding.
+                    </textarea>
+                  </div>
+                </div><!-- end div.formCol2 -->
+
+              </td>
+              <td class="rtCol"><h4 class="hed">Who Pays the Shipping Expenses?</h4>
+                <div class="infoSect">
+                  <p>You can choose to have the buyer pay for shipping expenses, by specifying the shipping costs on the form, or you can choose to cover the shipping costs by setting them as $0.</p>
+                  <p>You should include any handling charges or insurance charges in the shipping price as well, and specify what the shipping costs include in the shipping terms (tracking, expedited shipping, insurance amount, etc.</p>
+                  <p><strong>How do I edit my country and Zip/Post Code?</strong><br>
+                  We grab your country and Zip/Postal code from the <a href="/edit_data.php">Edit Your Settings</a> page. Adjusting them there will affect all future listings.</p>
+                </div>
+
+              </td>
+            </tr>
+        </tbody></table>
+
+        <input type="hidden" id="suggested_category" name="suggested_category" value="">
+
+        <table class="sellSect" id="sellAddons">
+          <tbody><tr>
+              <td class="lfCol">
+                <h3 class="hed addonsHed">Make it Fresh.</h3>
+
+                <div class="formCol1">
+                  <div class="formItem">
+                    <label>Fresh: <span class="unbold">Homepage</span></label>
+                    <div class="infoBox">
+                      <input type="checkbox" class="addonCheck" id="featureditem" name="featureditem" value="y" checked="">
+                      <label for="featureditem" class="addonItem">5.00 USD. Your item will randomly appear on the homepage.</label>
+                    </div>
+                  </div>
+
+
+                </div><!-- end div.formCol1 -->
+
+
+                <div class="formCol2">
+                  <div class="formItem">
+                    <label>Fresh: <span class="unbold">Category</span></label>
+                    <div class="infoBox">
+
+                      <input type="checkbox" class="addonCheck" id="catfeatureditem" name="catfeatureditem" value="y" checked="">
+                      <label for="catfeatureditem" class="addonItem">2.50 USD. Your item will randomly appear on the relevant category page.</label>
+                    </div>
+                  </div>
+                </div><!-- end div.formCol2 -->
+
+              </td>
+              <td class="rtCol"><h4 class="hed">Why Would I Do This?</h4>
+                <div class="infoSect">
+                  <p>Fresh is a great way to promote your items on MarketPublique.com.</p>
+                  <p>Fresh items are pulled in randomly every time the page is refreshed, more buyers will see your item regardless of when you listed it.</p>
+                  <p>Since items are displayed in a truly randomized way, we cannot guarantee how many times your item will be displayed.</p>
+                </div>
+              </td>
+            </tr>
+        </tbody></table>
+
+        <div id="sbmtSellItem"><input type="image" src="themes/default/butPreviewListing.gif" id="submitButton"></div>
+
+      </form>
+
